@@ -1,0 +1,53 @@
+:root {
+	--main-menu-color: #ffffff;
+	--focus-menu-color: #ff6c00;
+	--main-content-text-color: #555555;
+	--main-content-title-color: #555555;
+}
+
+body {
+	font-family: Open Sans, sans-serif;
+	color: var(--main-content-text-color);
+	background: #ffffff;
+}
+
+.container {
+	width: 1170px;
+}
+
+.header {
+	background-color: grey;
+}
+
+.header-list {
+	display: flex;
+	list-style: none;
+}
+
+.header-list-link {
+	color: var(--main-menu-color);
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	background-color: blue;
+}
+
+.header-list-link:hover,
+.header-list-link:focus {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	color: var(--focus-menu-color);
+}
+
+.header-tel {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--main-menu-color);
+}
