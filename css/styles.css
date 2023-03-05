@@ -2,26 +2,58 @@
 	--main-menu-color: #ffffff;
 	--focus-menu-color: #ff6c00;
 	--main-content-text-color: #555555;
+	--second-content-text-color: #9da4bd;
 	--main-content-title-color: #555555;
+	--sec-content-title-color: #303030;
+	--sec-content-text-color: #303030;
 }
 
 body {
-	font-family: Open Sans, sans-serif;
+	font-family: "Open Sans", sans-serif;
 	color: var(--main-content-text-color);
 	background: #ffffff;
+}
+
+.title {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+}
+
+.subtitle {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
 }
 
 .container {
 	width: 1170px;
 }
 
+/* ==============Header============ */
 .header {
 	background-color: grey;
 }
 
-.header-list {
-	display: flex;
+.list {
 	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.btn {
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .header-list-link {
@@ -30,7 +62,6 @@ body {
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.1em;
-	background-color: blue;
 }
 
 .header-list-link:hover,
@@ -51,3 +82,262 @@ body {
 	text-transform: uppercase;
 	color: var(--main-menu-color);
 }
+
+.header-btn {
+	color: var(--main-menu-color);
+}
+
+.head-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.head-menu-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* =================/Header================ */
+/* =================Hero-section=============== */
+
+.hero {
+	background-color: grey;
+}
+.hero-list {
+}
+.hero-item {
+}
+
+.hero-link {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+	color: var(--sec-content-title-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+	color: var(--focus-menu-color);
+}
+
+.hero-subtitle {
+	color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 1.18;
+	letter-spacing: 0.05em;
+	color: var(--main-menu-color);
+}
+.hero-description {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--second-content-text-color);
+}
+
+/* =================/Hero-section=============== */
+/* =================About-section=============== */
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-subtitle {
+	color: var(--sec-content-title-color);
+}
+.about-title {
+	color: var(--sec-content-title-color);
+}
+.about-description {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.86;
+	letter-spacing: 0.02em;
+	color: var(--main-content-title-color);
+}
+
+.about-description span {
+	font-size: 18px;
+	line-height: 1.67;
+}
+
+.about-button {
+	color: var(--main-content-title-color);
+}
+/* =================/About-section=============== */
+/* =================Services-section=============== */
+
+.services {
+	background-color: grey;
+}
+.services-subtitle {
+	color: rgba(157, 164, 189, 0.6);
+}
+.services-title {
+	color: var(--main-menu-color);
+}
+.services-list {
+}
+.services-item {
+}
+.services-item-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--second-content-text-color);
+}
+.services-button {
+	color: var(--main-menu-color);
+}
+
+/* =================/Services-section=============== */
+/* =================Why-us-section=============== */
+.whyus {
+}
+.whyus-list {
+}
+
+.whyus-item {
+}
+
+.whyus-item > span {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: var(--main-content-text-color);
+}
+
+.whyus-item-text {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-align: center;
+	color: var(--sec-content-text-color);
+}
+.whyus-subtitle {
+	color: var(--sec-content-title-color);
+}
+.whyus-title {
+	color: var(--sec-content-title-color);
+}
+.whyus-description {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--main-content-text-color);
+}
+/* =================/Why-us-section=============== */
+
+/* =================Barbers=============== */
+.barbers {
+}
+.barbers-subtitle {
+	color: var(--sec-content-title-color);
+}
+.barbers-title {
+	color: var(--sec-content-title-color);
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-item-title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.39;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--sec-content-title-color);
+}
+.barbers-item-description {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--focus-menu-color);
+}
+
+/* =================/Barbers=============== */
+
+/* =================Gallery=============== */
+.gallery {
+}
+.gallery-subtitle {
+	color: var(--sec-content-title-color);
+}
+.gallery-list {
+}
+.gallery-item {
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* =================/Gallery=============== */
+/* =================Contacts=============== */
+
+.contact {
+	background-color: grey;
+}
+.contact-title {
+	color: var(--main-menu-color);
+}
+
+.contact-address {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--second-content-text-color);
+}
+.contact-list {
+}
+.list {
+}
+.contact-item {
+}
+.contact-link {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--second-content-text-color);
+}
+.contact-subtitle {
+	color: var(--main-menu-color);
+}
+.contact-hours {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--second-content-text-color);
+}
+/* =================/Contacts=============== */
